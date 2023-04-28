@@ -1,4 +1,8 @@
 import helpdesk from "../../assets/helpdesk/helpdesk.png";
+import shoppingcart from "../../assets/shoppingcart/shoppingcart.png";
+import weatherapp from "../../assets/weatherapp/weather.png";
+import booking from "../../assets/hotelbookingsystem/booking.png";
+
 const projectEntry = [
   {
     id: 5,
@@ -10,7 +14,7 @@ const projectEntry = [
       "Designed and integrated responsive user interface using HTML, CSS, Bootstrap and jQuery",
       "Ensured data security and user authentication using ASP.NET Identity Framework",
     ],
-    images: [helpdesk, helpdesk, helpdesk],
+    image: shoppingcart,
     skill: [
       "C#",
       "Entity Framework core",
@@ -34,7 +38,7 @@ const projectEntry = [
       "Ensured passwords were hashed for security",
       "Demonstrated its functionality by building a ReactJS application to showcase to the audience",
     ],
-    images: [helpdesk, helpdesk, helpdesk],
+    image: helpdesk,
     skill: [
       "C#",
       "Entity Framework core",
@@ -49,6 +53,30 @@ const projectEntry = [
     state: "(In development)",
   },
   {
+    id: 3,
+    name: "Online Hotel Booking System",
+    info: [
+      "Developed a hotel booking system using React for the frontend and C#, Entity Framework, and ASP.NET for the backend",
+      "Implemented user registration and authentication for guests, staff members, and admins",
+      "Enabled guests to search for available rooms by location, date, and other criteria, and make reservations online",
+      "Enabled staff members to check-in and check-out guests, as well as make reservations for guests",
+      "Enabled admins to register their hotels and manage staff members, rooms, and other details",
+    ],
+    image: booking,
+    skill: [
+      "C#",
+      "Entity Framework core",
+      "MySQL",
+      "ASP.NET Web API",
+      "HTML5",
+      "CSS3",
+      "React.JS",
+    ],
+    git: "https://github.com/lenovalsha/HotelBookingSystemClient-Side",
+    site: "",
+    state: "(In development)",
+  },
+  {
     id: 2,
     name: "WeatherApp",
     info: [
@@ -56,7 +84,7 @@ const projectEntry = [
       "Allows users to search for a city and view its corresponding weather conditions, including temperature, humidity, and wind speed",
       "Implemented error handling and user input validation to improve user experience",
     ],
-    images: [helpdesk, helpdesk, helpdesk],
+    image: weatherapp,
     skill: ["HTML5", "CSS3", "Node.js", "JavaScript"],
     git: "https://github.com/lenovalsha/WeatherApp.git",
     site: "",

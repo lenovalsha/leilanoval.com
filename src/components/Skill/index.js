@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 function Skill(props) {
   return (
-    <div data-aos="fade-left" data-aos-duration="2000">
+    <div data-aos="fade-left" data-aos-duration="2000" key={props.id}>
       <div data-aos="fade-left" data-aos-duration="1000">
         {props.icon}
       </div>
@@ -14,7 +14,7 @@ function Skill(props) {
 }
 
 function createSkillComponent(e) {
-  return <Skill skill={e.skill} icon={e.icon} />;
+  return <Skill skill={e.skill} icon={e.icon} id={e.id} />;
 }
 export default function Skills() {
   return (

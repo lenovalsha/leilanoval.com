@@ -28,13 +28,6 @@ function Website(props) {
     opacity: isHover ? ".9" : "1",
   };
 
-  const style = {
-    opacity: ".9",
-    color: "blue",
-    top: 0,
-    left: 0,
-    zIndex: 99,
-  };
   const popupStyle = {
     display: showPopup ? "block" : "none",
   };
@@ -50,7 +43,7 @@ function Website(props) {
         data-aos-duration="2000"
         onClick={PopUpImage}
       >
-        {isHover ? <div style={style}>{props.name}</div> : null}
+        {isHover ? <div className="hover">{props.name}</div> : null}
       </div>
       {showPopup && (
         <div className="popup-image" style={popupStyle}>

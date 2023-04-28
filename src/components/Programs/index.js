@@ -1,5 +1,6 @@
 import { useState } from "react";
 import projectEntry from "./entry";
+import Laptop from "../Laptop";
 
 function CreateProjectComponent(e, index) {
   const [isShow, setIsShow] = useState(false);
@@ -12,22 +13,11 @@ function CreateProjectComponent(e, index) {
     display: isShow ? "block" : "none",
   };
 
-  const imageGallery = e.images.map((item, index) => {
-    return (
-      <div
-        className="image"
-        key={index}
-        style={{ backgroundImage: `url(${item})` }}
-      />
-    );
-  });
   if (index % 2 === 0) {
     // for even indexes, render the gallery on the left
     return (
-      <div className="project">
-        <div data-aos="fade-right" data-aos-duration="2000" className="gallery">
-          {imageGallery}
-        </div>
+      <div className="project" key={e.id}>
+        <Laptop img={e.image} />
         <div className="project-info">
           <h3>{e.name}</h3>
           <span onClick={Show}>>></span>
@@ -50,7 +40,7 @@ function CreateProjectComponent(e, index) {
   } else {
     // for odd indexes, render the gallery on the right
     return (
-      <div className="project">
+      <div className="project reverse" key={e.id}>
         <div className="project-info">
           <h3>{e.name}</h3>
           <span onClick={Show}>>></span>
@@ -68,9 +58,7 @@ function CreateProjectComponent(e, index) {
             <a href={e.git}>View in Github</a>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="2000" className="gallery">
-          {imageGallery}
-        </div>
+        <Laptop img={e.image} />
       </div>
     );
   }

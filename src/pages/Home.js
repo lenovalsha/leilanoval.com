@@ -6,9 +6,10 @@ import profile from "./../assets/profile/intro.png";
 const Home = () => {
   return (
     <div className="home-container">
-      <h1 className="name">Leila Noval</h1>
+      <h1 class="name">Leila Noval</h1>
+
       <section className="intro">
-        <Image img={profile} />
+        <Image img={profile} name="Leila Noval" />
         <div>
           <H1 content="Full Stack developer" />
           <p className="intro-paragraph">

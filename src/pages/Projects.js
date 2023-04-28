@@ -1,6 +1,6 @@
 import Programs from "../components/Programs";
 import Websites from "../components/Websites";
-import { FaBrain, FaLaptop } from "react-icons/fa";
+import { FaLaptop } from "react-icons/fa";
 
 import React from "react";
 
@@ -13,7 +13,8 @@ const Projects = () => {
       <p className="motto">Creating with purpose and passion</p>
       <Programs />
       <h2>Some Sample of my websites</h2>
-      <Websites />
+      <h3>Coming soon...</h3>
+      {/* <Websites /> */}
     </div>
   );
 };
