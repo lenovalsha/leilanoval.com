@@ -1,6 +1,17 @@
+import { useState } from "react";
 import projectEntry from "./entry";
 
-function createProjectComponent(e, index) {
+function CreateProjectComponent(e, index) {
+  const [isShow, setIsShow] = useState(false);
+
+  const Show = () => {
+    setIsShow(!isShow);
+  };
+
+  const showStyle = {
+    display: isShow ? "block" : "none",
+  };
+
   const imageGallery = e.images.map((item, index) => {
     return (
       <div
@@ -18,12 +29,21 @@ function createProjectComponent(e, index) {
           {imageGallery}
         </div>
         <div className="project-info">
-          <h1>{e.name}</h1>
-          <ul className="info-list">
-            {e.info.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+          <h3>{e.name}</h3>
+          <span onClick={Show}>>></span>
+          <div className="show-more" style={showStyle}>
+            <ul className="skill-list">
+              {e.skill.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+            <ul className="info-list">
+              {e.info.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+            <a href={e.git}>View in Github</a>
+          </div>
         </div>
       </div>
     );
@@ -32,12 +52,21 @@ function createProjectComponent(e, index) {
     return (
       <div className="project">
         <div className="project-info">
-          <h1>{e.name}</h1>
-          <ul className="info-list">
-            {e.info.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+          <h3>{e.name}</h3>
+          <span onClick={Show}>>></span>
+          <div className="show-more" style={showStyle}>
+            <ul className="skill-list">
+              {e.skill.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+            <ul className="info-list">
+              {e.info.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+            <a href={e.git}>View in Github</a>
+          </div>
         </div>
         <div data-aos="fade-left" data-aos-duration="2000" className="gallery">
           {imageGallery}
@@ -47,5 +76,5 @@ function createProjectComponent(e, index) {
   }
 }
 export default function Projects() {
-  return <div id="project">{projectEntry.map(createProjectComponent)}</div>;
+  return <div id="project">{projectEntry.map(CreateProjectComponent)}</div>;
 }

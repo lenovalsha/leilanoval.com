@@ -7,19 +7,19 @@ const Navbar = () => {
       <img className="logo" src={logo} />
       <ul>
         <li>
-          <a>Home</a>
+          <a href="#root">Home</a>
         </li>
         <li>
-          <a>About me</a>
+          <a href="#skill">Skills</a>
         </li>
         <li>
-          <a>Skills</a>
+          <a href="#project">Projects</a>
         </li>
         <li>
-          <a>Projects</a>
+          <a href="#about">About me</a>
         </li>
         <li>
-          <a>Contact</a>
+          <a href="#root">Contact</a>
         </li>
       </ul>
     </nav>

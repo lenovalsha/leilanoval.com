@@ -1,5 +1,5 @@
 import skillEntry from "./entry";
-import { FaBrain } from "react-icons/fa";
+import { FaBrain, FaLaptop } from "react-icons/fa";
 import "aos/dist/aos.css";
 
 function Skill(props) {
@@ -23,7 +23,8 @@ export default function Skills() {
         <h2 data-aos="fade-right" data-aos-duration="2000">
           Skills {<FaBrain />}
         </h2>
-        <div className="skillContainer">
+        <p>Always growing and learning</p>
+        <div className="skill-container">
           {skillEntry.map(createSkillComponent)}
         </div>
       </div>

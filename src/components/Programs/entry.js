@@ -49,19 +49,6 @@ const projectEntry = [
     state: "(In development)",
   },
   {
-    id: 3,
-    name: "ZackaryGuckertArt.com",
-    info: [
-      "Built a responsive Storyboard website using HTML5, CSS3, and JavaScript",
-      "Utilized Git for version control and collaboration with team members",
-      "I am still managing this website for the client",
-    ],
-    images: [helpdesk, helpdesk, helpdesk],
-    skill: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-    git: "https://github.com/lenovalsha/ZackaryGuckertArt.git",
-    site: "https://zackaryguckertart.com/",
-  },
-  {
     id: 2,
     name: "WeatherApp",
     info: [

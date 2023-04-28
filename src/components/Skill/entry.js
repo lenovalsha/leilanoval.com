@@ -7,6 +7,7 @@ import {
   FaJs,
   FaDatabase,
   FaCloud,
+  FaBootstrap,
 } from "react-icons/fa";
 const skillEntry = [
   {
@@ -62,6 +63,12 @@ const skillEntry = [
     skill: "RESTful API",
     img: "",
     icon: <FaCloud />,
+  },
+  {
+    id: 10,
+    skill: "Bootstrap",
+    img: "",
+    icon: <FaBootstrap />,
   },
 ];
 

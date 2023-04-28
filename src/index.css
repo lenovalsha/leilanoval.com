@@ -8,7 +8,8 @@ body {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e4dcd1;
+  /* background-color: #e4dcd1; */
+  font-family: 'Castoro Titling', cursive;
 }
 
 code {
@@ -21,10 +22,11 @@ nav{
   justify-content: space-between;
   height: 100px;
   align-items: center;
-}
-nav h1{
-  position: relative;
-  left: 20px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  top: 0;
+
 }
 ul{
   display: flex;
@@ -34,39 +36,93 @@ ul{
 ul li{
   list-style: none;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 .logo{
   width: 100px;
   height: 100px;
 }
-.flex-row{
-  display: flex;
-  justify-content: space-evenly;
-  background-color: pink;
-
-  
-}
 /* HOME */
-.vertical-center {
-  align-items: center;
-  text-align: center;
-  position: relative;
-  justify-content: space-evenly;
-  margin-top: 100px;
 
-}
-.container{
+.home-container{
   height: 100vh;
-  background-color: #e4dcd1;
+  /* background-color: #e4dcd1; */
   position: relative;
   margin-top: 100px;
+  align-items: center;
+}
+.intro{
+  margin: 150px auto;
+  width: 50%;
 }
 .name{
-  font-size: 4rem;
+  font-size: 3rem;
+  /* font-size: 120px; */
+  font-weight: 100;
+  font-stretch:extra-condensed;
+  position: relative;
+  letter-spacing: 5rem;
+  top: 50px;
+
 }
-#skill{
+.intro-title{
+  font-size: 30px;
+  font-weight: 100;
+}
+.intro-paragraph{
+  font-size: 13px;
+  color: black;
+  background-color: #e4dcd1;
+  width: fit-content;
+  margin: 0 auto;
+}
+/* Skill */
+  #skill{
   height: 100vh;
+  width: 50%;
+  margin: 0 auto;
 }
+#skill h2{
+  text-align: center;
+  font-size: 40px;
+
+}
+.skill-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.skill-container > div{
+  flex:15%;
+  padding:80px 20px;
+  }
+
+
 /* Project */
+#project{
+  width:85%;
+  margin: 0 auto;
+}
+#project h1{
+  text-align: center;
+  font-size: 40px;
+}
+#project a{
+  text-decoration: none;
+  background-color:#e4dcd1;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  top: 50px;
+  color: black;
+  
+}
+.motto{
+  position: relative;
+  margin-bottom:120px ;
+}
 .project{
   display: flex;
   justify-content: space-between;
@@ -104,6 +160,26 @@ ul li{
 .info-list li{
   list-style: circle;
   text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+}
+.skill-list{
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  margin: 0 auto;
+  width: 70%;
+  position: relative;
+  margin-bottom: 40px;
+  border: 1px solid tan;
+  justify-content: space-between;
+}
+.skill-list > li{
+  flex: 45%;
+  font-size: 13px;
+  text-align: left;
+  list-style:disc;
+  color:rgb(75, 60, 41);
+  padding: 5px;
 }
 .website-container{
   display: flex;
@@ -122,15 +198,85 @@ ul li{
   position: relative; 
 }
 
-.s-image{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  height: 100vh;
+
+.popup-image{
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100%;
   width: 100%;
+  z-index: 100;
+  background-color: rgba(12, 12, 12, 0.541);
+  display: none;
+}
+.project-info span{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  animation: float-up-down 2s ease-in-out infinite;
+
+}
+.popup-image span{
+  position: absolute;
   top: 0;
-  left: 0;
-  background-color: yellow;
-  z-index: 99999;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 60px;
+  font-weight: 600;
+  z-index: 100;
+}
+.popup-image img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 1500px;
+  object-fit: cover;
+}
+/* About */
+#about{
+  position: relative;
+  top: 200px;
+}
+#about h1{
+  background-color: #e4dcd1;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+}
+.about-container{
+  display: flex;
+  width: 50%;
+  margin: 200px auto;
+  justify-content: space-between;
 }
 
+#about p{
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  text-align: left;
+  padding-left:50px ;
+}
+@media (max-width:1500px){
+  .popup-image img{
+    width: 95%;
+  }
+}
+@keyframes float-up-down {
+  0% {
+    transform: translateY(0) rotate(90deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(90deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}

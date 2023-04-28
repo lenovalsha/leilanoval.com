@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import aos from "aos";
 import React from "react";
 import Projects from "./pages/Projects";
+import About from "./pages/About";
 function App() {
   React.useEffect(() => {
     aos.init(3000);
@@ -16,6 +17,7 @@ function App() {
       <Home />
       <Skills />
       <Projects />
+      <About />
     </div>
   );
 }

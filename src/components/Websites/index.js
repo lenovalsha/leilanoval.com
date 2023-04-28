@@ -5,8 +5,8 @@ import { isElement } from "react-dom/test-utils";
 import { imageStyle } from "../ProfileImage/style";
 function Website(props) {
   const [isHover, setIsHover] = useState(false);
-  const [isImageEnlarge, setIsImageEnlarge] = useState(false);
-
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupImgSrc, setPopupImgSrc] = useState("");
   const MouseHover = () => {
     setIsHover(true);
   };
@@ -15,8 +15,12 @@ function Website(props) {
     setIsHover(false);
   };
 
-  const handleClick = () => {
-    setIsImageEnlarge(!isImageEnlarge);
+  const PopUpImage = () => {
+    setShowPopup(true);
+    setPopupImgSrc(props.img);
+  };
+  const Close = () => {
+    setShowPopup(false);
   };
 
   const hoverStyle = {
@@ -26,18 +30,13 @@ function Website(props) {
 
   const style = {
     opacity: ".9",
-    color: isImageEnlarge ? "pink" : "yellow",
-
+    color: "blue",
     top: 0,
     left: 0,
     zIndex: 99,
   };
-  const imageStyle = {
-    display: "block",
-    position: "absolute",
-    backgroundImage: `url(${props.img})`,
-    top: "1000px",
-    left: 0,
+  const popupStyle = {
+    display: showPopup ? "block" : "none",
   };
 
   return (
@@ -49,13 +48,16 @@ function Website(props) {
         style={hoverStyle}
         data-aos="flip-up"
         data-aos-duration="2000"
+        onClick={PopUpImage}
       >
-        {isHover ? (
-          <div style={style} onClick={handleClick}>
-            {props.name}
-          </div>
-        ) : null}
+        {isHover ? <div style={style}>{props.name}</div> : null}
       </div>
+      {showPopup && (
+        <div className="popup-image" style={popupStyle}>
+          <span onClick={Close}>X</span>
+          <img src={popupImgSrc} />
+        </div>
+      )}
     </>
   );
 }

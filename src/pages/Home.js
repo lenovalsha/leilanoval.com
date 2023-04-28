@@ -1,17 +1,20 @@
 import React from "react";
 import Image from "./../components/ProfileImage";
 import H1 from "./../components/H1";
-import Paragraph from "./../components/Paragraph";
+import profile from "./../assets/profile/intro.png";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="home-container">
       <h1 className="name">Leila Noval</h1>
-      <section className="flex-row vertical-center">
-        <Image />
+      <section className="intro">
+        <Image img={profile} />
         <div>
-          <H1 />
-          <Paragraph />
+          <H1 content="Full Stack developer" />
+          <p className="intro-paragraph">
+            A passionate software developer who takes pleasure in creating
+            programs
+          </p>
         </div>
       </section>
     </div>
