@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/lenovalsha.github.io/static/css/main.c9025cca.css",
+    "main.js": "/lenovalsha.github.io/static/js/main.ca032060.js",
+    "static/media/shoppingcart.png": "/lenovalsha.github.io/static/media/shoppingcart.beb7bb4a7d2f7933199a.png",
+    "static/media/booking.png": "/lenovalsha.github.io/static/media/booking.9f0aef24bd3bcdd08087.png",
+    "static/media/profile.png": "/lenovalsha.github.io/static/media/profile.d0b99d4ad6277c3d1c0a.png",
+    "static/media/weather.png": "/lenovalsha.github.io/static/media/weather.9accd3da364b8fb86dc0.png",
+    "static/media/zackguckertart.png": "/lenovalsha.github.io/static/media/zackguckertart.87c76a112eea51b5b688.png",
+    "static/media/helpdesk.png": "/lenovalsha.github.io/static/media/helpdesk.63c4be8478b8956e1bdc.png",
+    "static/media/intro.png": "/lenovalsha.github.io/static/media/intro.f284490712995ff65e00.png",
+    "static/media/LN.png": "/lenovalsha.github.io/static/media/LN.23e877dbc51e3a7b78e0.png",
+    "index.html": "/lenovalsha.github.io/index.html",
+    "main.c9025cca.css.map": "/lenovalsha.github.io/static/css/main.c9025cca.css.map",
+    "main.ca032060.js.map": "/lenovalsha.github.io/static/js/main.ca032060.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9025cca.css",
+    "static/js/main.ca032060.js"
+  ]
+}
