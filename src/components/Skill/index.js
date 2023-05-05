@@ -4,8 +4,8 @@ import "aos/dist/aos.css";
 
 function Skill(props) {
   return (
-    <div data-aos="fade-left" data-aos-duration="2000" key={props.id}>
-      <div data-aos="fade-left" data-aos-duration="1000">
+    <div data-aos="fade-down" data-aos-duration="2000" key={props.id}>
+      <div data-aos="fade-down" data-aos-duration="1000">
         {props.icon}
       </div>
       {props.skill}
@@ -20,7 +20,7 @@ export default function Skills() {
   return (
     <div className="container">
       <div>
-        <h2 data-aos="fade-right" data-aos-duration="2000">
+        <h2 data-aos="fade-down" data-aos-duration="2000">
           Skills {<FaBrain />}
         </h2>
         <p>Always growing and learning</p>

@@ -540,6 +540,63 @@ a{
   right: 0;
 }
 }
+@media (max-height:850px) and (max-width:400px ){
+
+  .name{
+    font-size: 2rem;
+    letter-spacing: 3rem;
+    text-align: center;
+  }
+  .intro{
+      width: 100%;
+      margin: 100px auto;
+     text-align: center;
+    }
+    .intro-img{
+      width: 200px;
+    }
+    .home-container{
+      width: 100%;
+      margin: 0 auto;
+      
+    }
+    #skill{
+      height: 100vh;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      margin-top: 100px;
+    }
+    .upper{
+      height: 9rem;
+    }
+    .inner{
+      height: 7rem;
+    }
+    .project-info{
+      width: 100%;
+      text-align: center;
+    }
+    #about{
+      text-align: center;
+    }
+    #about p{
+      width: 100%;
+      text-align: left;
+      
+    }
+    #about p, #contact p{
+      width: 100%;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: small;
+      padding-left: 0;
+     
+    }
+    #contact{
+      text-align: center;
+    }
+  }
 @keyframes float-up-down {
   0% {
     transform: translateY(0) rotate(90deg);
