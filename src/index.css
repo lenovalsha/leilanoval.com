@@ -112,6 +112,7 @@ a{
 #project{
   width:85%;
   margin: 0 auto;
+  height: fit-content;
 }
 #project h1{
   text-align: center;
@@ -540,7 +541,7 @@ a{
   right: 0;
 }
 }
-@media (max-height:850px) and (max-width:400px ){
+@media (max-height:1000px) and (max-width:600px ){
 
   .name{
     font-size: 2rem;
@@ -578,8 +579,18 @@ a{
       width: 100%;
       text-align: center;
     }
+   
+    #project{
+      position: relative;
+      top: 200px;
+    }
     #about{
+      margin-top: 200px;
       text-align: center;
+    }
+    .about-container{
+      position: relative;
+     top: -100px;
     }
     #about p{
       width: 100%;
