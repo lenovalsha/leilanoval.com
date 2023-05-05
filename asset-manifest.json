@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lenovalsha.github.io/static/css/main.dfc4370b.css",
+    "main.css": "/lenovalsha.github.io/static/css/main.6051ae44.css",
     "main.js": "/lenovalsha.github.io/static/js/main.47a92a5f.js",
     "static/media/shoppingcart.png": "/lenovalsha.github.io/static/media/shoppingcart.beb7bb4a7d2f7933199a.png",
     "static/media/booking.png": "/lenovalsha.github.io/static/media/booking.9f0aef24bd3bcdd08087.png",
@@ -11,11 +11,11 @@
     "static/media/intro.png": "/lenovalsha.github.io/static/media/intro.f284490712995ff65e00.png",
     "static/media/LN.png": "/lenovalsha.github.io/static/media/LN.23e877dbc51e3a7b78e0.png",
     "index.html": "/lenovalsha.github.io/index.html",
-    "main.dfc4370b.css.map": "/lenovalsha.github.io/static/css/main.dfc4370b.css.map",
+    "main.6051ae44.css.map": "/lenovalsha.github.io/static/css/main.6051ae44.css.map",
     "main.47a92a5f.js.map": "/lenovalsha.github.io/static/js/main.47a92a5f.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfc4370b.css",
+    "static/css/main.6051ae44.css",
     "static/js/main.47a92a5f.js"
   ]
 }
